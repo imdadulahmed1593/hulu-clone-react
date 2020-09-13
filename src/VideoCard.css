@@ -1,0 +1,39 @@
+.videoCard {
+  color: white;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  transition: transform 100ms;
+}
+
+.videoCard:hover {
+  transform: scale(1.09);
+}
+
+.videoCard > img {
+  height: 300px;
+  width: 500px;
+  object-fit: contain;
+}
+
+.videoCard > h2 {
+  padding-top: 10px;
+}
+
+.videoCard__stats {
+  display: none;
+}
+.videoCard:hover > .videoCard__stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.videoCard__likes {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.videoCard__likes > .muiSvgIcon-root {
+  margin: 5px;
+}
